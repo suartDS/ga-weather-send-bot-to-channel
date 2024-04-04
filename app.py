@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_weather() -> pd.DataFrame :
-    # Setup the Open-Meteo API client with cache and retry on error
+
     cache_session = requests_cache.CachedSession('.cache', expire_after=3600)
     retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
     openmeteo = openmeteo_requests.Client(session=retry_session)
@@ -45,7 +45,7 @@ def get_weather() -> pd.DataFrame :
 
     hourly_dataframe = pd.DataFrame(data=hourly_data)
     return hourly_dataframe.to_markdown(index=None)
-    
+
 def send_message(message):
 
     TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
