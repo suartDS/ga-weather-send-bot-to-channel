@@ -1,0 +1,6 @@
+open-meteo==0.3.1
+openmeteo_requests==1.2.0
+pandas==2.2.1
+python-dotenv==1.0.1
+requests==2.31.0
+telegram_text==0.2.0
