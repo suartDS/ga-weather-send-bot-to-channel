@@ -1,4 +1,4 @@
-name: Run daily and send weather to channel
+name: Run and send weather to channel
 on: 
     workflow_dispatch:
 
