@@ -18,7 +18,7 @@ This is a simple example shows how to automate taking data via API and sending i
 In the file `/.github/workflows/run_daily.yml` after the parameter `on` specify one of the parameters: 
  
  - `push` - one-time launch on push to github repo
- - `workflow_dispatch:` - manual start
+ - `workflow_dispatch` - manual start
  - `0 * * * *` - scheduled launch 1 time per hour
 
 
