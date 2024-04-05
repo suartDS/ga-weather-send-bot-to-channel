@@ -1,6 +1,4 @@
-<img src=”https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pR1139SQG-TktBi7Pm3D_Q.png" alt=”my banner”>
-
-# Automation of work with github
+# Automation of work using GitHub Actions
 This is a simple example shows code on how to automate taking data via API and sending it to a Telegram channel.
 
  - We get weather data from https://api.open-meteo.com/v1/forecast
@@ -10,10 +8,10 @@ This is a simple example shows code on how to automate taking data via API and s
 ## Installation
 1. Clone code
 2. Create python venv
-3. Run ``` pip install -r requirements.txt ```
-4. Create .env with your 
+3. Install Dependencies run ``` pip install -r requirements.txt ```
+4. Create .env with your keys
 5. Run localy 
-6. Push code to your github
+6. Push code to your github acc
 
 ### run_daily
 
@@ -25,4 +23,4 @@ This is a simple example shows code on how to automate taking data via API and s
 
 ## License
 
-MIT © [Artem Suchkov]
+**MIT** ©
