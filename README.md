@@ -1,9 +1,10 @@
 # Automation of work using GitHub Actions
-This is a simple example shows code on how to automate taking data via API and sending it to a Telegram channel.
+This is a simple example shows how to automate taking data via API and sending it to a Telegram channel.
 
- - We get weather data from https://api.open-meteo.com/v1/forecast
+ - We get weather data from **API** https://api.open-meteo.com/v1/forecast
  - Convert data into a **Pandas** dataframe 
  - Send data to **Telegram** channel with bot
+ - Set up a launch schedule for our application in **GitHub Actions**
 
 ## Installation
 1. Clone code
@@ -13,12 +14,13 @@ This is a simple example shows code on how to automate taking data via API and s
 5. Run localy 
 6. Push code to your github acc
 
-### run_daily
+### Setting up a schedule
 
-
- - `push` - 
- - `workflow_dispatch:` - 
- - `******` - 
+In the file `/.github/workflows/run_daily.yml` after the parameter `on` specify one of the parameters: 
+ 
+ - `push` - one-time launch on push to github repo
+ - `workflow_dispatch:` - manual start
+ - `0 * * * *` - scheduled launch 1 time per hour
 
 
 ## License
