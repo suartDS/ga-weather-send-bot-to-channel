@@ -12,7 +12,6 @@ This is a simple example shows how to automate taking data via API and sending i
 3. Install Dependencies run ``` pip install -r requirements.txt ```
 4. Create .env with your keys
 5. Run localy 
-6. Push code to your github acc
 
 ### Setting up a schedule
 
